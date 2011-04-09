@@ -1,2 +1,26 @@
+=transform($left, $top, $rotation, $skew)
+  -moz-transform: translate($left, $top) rotate($rotation) skew($skew)
+  -webkit-transform: translate($left, $top) rotate($rotation) skew($skew)
+  -o-transform: translate($left, $top) rotate($rotation) skew($skew)
+  -ms-transform: translate($left, $top) rotate($rotation) skew($skew)
+  transform: translate($left, $top) rotate($rotation) skew($skew)
+
 body
   background-color: #d80d84
+
+  header
+    h1
+      font-family: 'Droid Sans', serif
+      font-weight: bold
+      font-size: 3em
+      margin-left: 5em
+
+    h2
+      font-family: 'Lobster', serif
+      +transform(-1.9em, -1em, -70deg, -1deg)
+      font-size: 5em
+      width: 6em
+      text-align: center
+      opacity: 0.1
+      line-height: 0.9em
+
