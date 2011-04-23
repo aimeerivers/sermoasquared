@@ -183,11 +183,13 @@ body {
   color: #181818;
 
   header {
+    font-family: 'Droid Sans', serif;
+
     h1 {
-      font-family: 'Droid Sans', serif;
       font-weight: bold;
-      font-size: 3em;
-      margin-left: 6em;
+      font-size: 2.5em;
+      margin-left: 7.1em;
+      margin-top: 1em;
     }
 
     h2 {
@@ -196,8 +198,8 @@ body {
       top: 0;
       left: 0;
       margin: 0;
-      @include transform(-0.5em, 1em, -70deg, -1deg);
-      font-size: 5em;
+      @include transform(-0.5em, 1em, -73deg, -1deg);
+      font-size: 5.4em;
       text-align: center;
       opacity: 0.1;
       line-height: 0.9em;
@@ -205,24 +207,24 @@ body {
 
     .hearts {
       position: absolute;
-      left: 17em;
+      left: 16em;
       top: 5em;
     }
 
     .tel {
-      margin-left: 17.5em;
+      margin-left: 8.5em;
+      font-weight: bold;
+      font-size: 2em;
 
       .type {
         display: none;
       }
+    }
 
-      .value {
-        font-family: 'Droid Sans', serif;
-        font-weight: bold;
-        font-size: 2em;
-
-      }
-
+    .email {
+      font-size: 1.5em;
+      margin-left: 9.8em;
+      margin-top: 5.5em;
     }
   }
 }
