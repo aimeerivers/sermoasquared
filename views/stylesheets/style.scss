@@ -165,12 +165,60 @@ a:hover { color: #036; }
 /**
  * Primary styles
  *
- * Author: 
+ * Author: aimee daniells
  */
 
 
 
+@mixin transform($left, $top, $rotation, $skew) {
+  -moz-transform: translate($left, $top) rotate($rotation) skew($skew);
+  -webkit-transform: translate($left, $top) rotate($rotation) skew($skew);
+  -o-transform: translate($left, $top) rotate($rotation) skew($skew);
+  -ms-transform: translate($left, $top) rotate($rotation) skew($skew);
+  transform: translate($left, $top) rotate($rotation) skew($skew);
+}
 
+body {
+  background-color: #d80d84;
+
+  header {
+    h1 {
+      font-family: 'Droid Sans', serif;
+      font-weight: bold;
+      font-size: 3em;
+      margin-left: 5em;
+    }
+
+    h2 {
+      font-family: 'Lobster', serif;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      @include transform(-0.5em, 1em, -70deg, -1deg);
+      font-size: 5em;
+      text-align: center;
+      opacity: 0.1;
+      line-height: 0.9em;
+    }
+
+    .tel {
+      margin-left: 14em;
+
+      .type {
+        display: none;
+      }
+
+      .value {
+        font-family: 'Droid Sans', serif;
+        font-weight: bold;
+        font-size: 2em;
+
+      }
+
+    }
+  }
+}
 
 
 
