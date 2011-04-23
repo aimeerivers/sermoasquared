@@ -226,6 +226,38 @@ body {
       margin-left: 9.8em;
       margin-top: 5.5em;
     }
+
+    .contact-links {
+      font-size: 1.3em;
+      position: absolute;
+      left: 38em;
+      top: 2em;
+      border-left: 1px solid #d70480;
+
+      ul {
+        list-style: none;
+
+        li {
+          padding: 10px 0 10px 40px;
+          background-position: left center;
+          background-repeat: no-repeat;
+
+          a {
+            text-decoration: none;
+            color: #111;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        li.linkedin { background-image: url(/images/icons/linkedin.png); }
+        li.github { background-image: url(/images/icons/github.png); }
+        li.twitter { background-image: url(/images/icons/twitter.png); }
+        li.wordpress { background-image: url(/images/icons/wordpress.png); }
+        li.skype { background-image: url(/images/icons/skype.png); }
+      }
+    }
   }
 }
 
