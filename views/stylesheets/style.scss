@@ -325,6 +325,56 @@ body {
 
   /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you: j.mp/textsizeadjust */
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+
+  body {
+
+    header {
+      h1 {
+        margin: auto;
+        text-align: center;
+      }
+
+      h2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: auto;
+        @include transform(0, 0, 0deg, 0deg);
+        font-size: 3.4em;
+        opacity: 0.9;
+        line-height: auto;
+      }
+
+      .hearts {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .tel {
+        margin-top: 1em;
+        margin-left: auto;
+        text-align: center;
+      }
+
+      .email {
+        font-size: 1em;
+        margin-left: auto;
+        margin-top: auto;
+        text-align: center;
+      }
+
+      .contact-links {
+        font-size: 1.3em;
+        position: relative;
+        left: auto;
+        top: auto;
+        border-left: none;
+        margin: 1em auto;
+      }
+
+    }
+  }
 }
 
 
