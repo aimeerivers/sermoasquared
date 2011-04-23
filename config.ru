@@ -1,4 +1,7 @@
 require 'rubygems'
-require File.join(File.dirname(__FILE__), 'lib/portfolio.rb')
+require 'bundler'
+Bundler.require
 
-run Portfolio
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'app'
+run Sinatra::Application
