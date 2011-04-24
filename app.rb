@@ -34,6 +34,22 @@ helpers do
 end
 
 
+LINKS = {
+  delicious: 'http://delicious.com/sermoa',
+  facebook: 'http://facebook.com/aimeedaniells',
+  flickr: 'http://flickr.com/photos/sermoa',
+  github: 'http://github.com/sermoa',
+  google: 'http://profiles.google.com/aimeedaniells',
+  gowalla: 'http://gowalla.com/sermoa',
+  linkedin: 'http://linkedin.com/in/aimeedaniells',
+  readernaut: 'http://readernaut.com/sermoa',
+  skype: 'skype:sermoa?call',
+  twitter: 'http://twitter.com/sermoa',
+  wordpress: 'http://sermoa.wordpress.com',
+  youtube: 'http://youtube.com/user/sermoa'
+}
+
+
 #
 # Routes
 #

@@ -334,6 +334,19 @@ body {
       }
     }
   }
+
+  footer {
+    margin-bottom: 3em;
+
+    ul.all-contact-links {
+      list-style-type: none;
+
+      li {
+        float: left;
+        margin: 0.5em;
+      }
+    }
+  }
 }
 
 

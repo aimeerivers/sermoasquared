@@ -1,0 +1,5 @@
+%ul.all-contact-links.clearfix
+  - LINKS.each_pair do |name, link|
+    %li
+      %a{href: link, title: name}
+        %img{src: "/images/icons/#{name}.png", alt: name}
