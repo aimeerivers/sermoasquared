@@ -278,6 +278,7 @@ body {
 
   #main {
     background-color: #f7e0f6;
+    background-image: url(/images/texture.jpg);
     margin: 3em 2em;
     @include border_radius(1em);
     border: 0.5em solid #c33b72;
