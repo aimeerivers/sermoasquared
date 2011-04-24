@@ -178,6 +178,18 @@ a:hover { color: #036; }
   transform: translate($left, $top) rotate($rotation) skew($skew);
 }
 
+@mixin border_radius($amount) {
+  -moz-border-radius: $amount;
+  -webkit-border-radius: $amount;
+  border-radius: $amount;
+}
+
+@mixin box_shadow($horizontal, $vertical, $blur, $colour) {
+  -moz-box-shadow: $horizontal $vertical $blur $colour;
+  -webkit-box-shadow: $horizontal $vertical $blur $colour;
+  box-shadow: $horizontal $vertical $blur $colour;
+}
+
 body {
   background-color: #d9427f;
   color: #181818;
@@ -256,6 +268,64 @@ body {
         li.twitter { background-image: url(/images/icons/twitter.png); }
         li.wordpress { background-image: url(/images/icons/wordpress.png); }
         li.skype { background-image: url(/images/icons/skype.png); }
+      }
+    }
+  }
+
+  #main {
+    background-color: #f7e0f6;
+    margin: 3em 2em;
+    @include border_radius(1em);
+    border: 0.5em solid #c33b72;
+    padding: 1em;
+
+    .block-level {
+      margin: 0.5em 0;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      @extend .block-level;
+    }
+
+    h3 {
+      font-size: 1.3em;
+      @extend .block-level;
+    }
+
+    p {
+      font-size: 1.2em;
+      @extend .block-level;
+    }
+
+    .section {
+      padding-top: 1em;
+    }
+
+    .section:first-child {
+      padding-top: 0;
+    }
+
+    .portfolio .example {
+      width: 400px;
+      float: left;
+      margin-right: 3em;
+      margin-bottom: 3em;
+
+      img {
+        @include box_shadow(3px, 3px, 8px, #c8b0c5);
+        border: 1px solid #c1c6dd;
+      }
+
+      h3 {
+        width: 50%;
+        float: left;
+      }
+
+      .link {
+        width: 50%;
+        float: right;
+        text-align: right;
       }
     }
   }
@@ -373,6 +443,35 @@ body {
         margin: 1em auto;
       }
 
+    }
+
+    #main {
+      margin: 3em 0.5em;
+      padding: 0.5em;
+
+      .portfolio .example {
+        width: 200px;
+
+        h3 {
+          width: auto;
+          float: none;
+        }
+
+        .link {
+          width: auto;
+          float: none;
+          text-align: left;
+          line-height: 1.3em;
+        }
+
+        p {
+          clear: left;
+        }
+
+        img {
+          width: 190px;
+        }
+      }
     }
   }
 }
