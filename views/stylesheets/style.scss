@@ -195,20 +195,28 @@ body {
   color: #181818;
   font-family: "Gill Sans", "Gill Sans MT", Verdana, Arial, Helvetica, sans-serif;
 
+  header, #main, footer {
+    width: 878px;
+    margin: 0 auto;
+    position: relative;
+  }
+
   header {
+    height: 22em;
 
     h1 {
       font-weight: bold;
       font-size: 2.5em;
-      margin-left: 7.1em;
-      margin-top: 1em;
+      position: absolute;
+      left: 7.1em;
+      top: 1em;
     }
 
     h2 {
       font-family: 'Lobster', serif;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 0.2em;
+      left: 0.2em;
       margin: 0;
       @include transform(-0.5em, 1em, -73deg, -1deg);
       font-size: 5.4em;
@@ -219,12 +227,14 @@ body {
 
     .hearts {
       position: absolute;
-      left: 16em;
+      left: 18em;
       top: 5em;
     }
 
     .tel {
-      margin-left: 8.5em;
+      position: absolute;
+      left: 8.5em;
+      top: 3em;
       font-weight: bold;
       font-size: 2em;
 
@@ -239,15 +249,16 @@ body {
 
     .email {
       font-size: 1.5em;
-      margin-left: 9.8em;
-      margin-top: 5.5em;
+      position: absolute;
+      left: 9.8em;
+      top: 11.5em;
     }
 
     .contact-links {
       font-size: 1.3em;
       position: absolute;
-      left: 38em;
-      top: 2em;
+      left: 41em;
+      top: 2.5em;
       border-left: 1px solid #c33b72;
 
       ul {
@@ -279,7 +290,6 @@ body {
   #main {
     background-color: #f7e0f6;
     background-image: url(/images/texture.jpg);
-    margin: 3em 2em;
     @include border_radius(1em);
     border: 0.5em solid #c33b72;
     padding: 1em;
@@ -314,8 +324,7 @@ body {
     .portfolio .example {
       width: 400px;
       float: left;
-      margin-right: 3em;
-      margin-bottom: 3em;
+      margin: 1.5em;
 
       img {
         @include box_shadow(3px, 3px, 8px, #c8b0c5);
@@ -336,13 +345,15 @@ body {
   }
 
   footer {
-    margin-bottom: 3em;
+    margin: 3em auto;
+    text-align: center;
 
     ul.all-contact-links {
       list-style-type: none;
+      margin-left: 0;
 
       li {
-        float: left;
+        display: inline;
         margin: 0.5em;
       }
     }
@@ -416,10 +427,21 @@ body {
 
   body {
 
+    header, #main, footer {
+      width: auto;
+      margin: auto;
+    }
+
     header {
+
+      height: auto;
+
       h1 {
         margin: auto;
         text-align: center;
+        position: relative;
+        top: auto;
+        left: auto;
       }
 
       h2 {
@@ -441,15 +463,18 @@ body {
 
       .tel {
         margin-top: 1em;
-        margin-left: auto;
         text-align: center;
+        position: relative;
+        top: auto;
+        left: auto;
       }
 
       .email {
         font-size: 1em;
-        margin-left: auto;
-        margin-top: auto;
         text-align: center;
+        position: relative;
+        top: auto;
+        left: auto;
       }
 
       .contact-links {
@@ -459,6 +484,7 @@ body {
         top: auto;
         border-left: none;
         margin: 1em auto;
+        display: inline;
       }
 
     }
@@ -469,6 +495,7 @@ body {
 
       .portfolio .example {
         width: 100%;
+        margin: 1em auto;
 
         h3 {
           width: auto;
