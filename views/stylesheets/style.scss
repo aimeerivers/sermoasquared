@@ -355,6 +355,10 @@ body {
       li {
         display: inline;
         margin: 0.5em;
+
+        a {
+          color: transparent;
+        }
       }
     }
   }
