@@ -196,7 +196,7 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Verdana, Arial, Helvetica, sans-serif;
 
   header, #main, footer {
-    width: 878px;
+    width: 880px;
     margin: 0 auto;
     position: relative;
   }
@@ -361,6 +361,27 @@ body {
         }
       }
     }
+  }
+}
+
+.no-csstransforms body header {
+  h1 {
+    left: 6.5em;
+  }
+
+  h2 {
+    font-size: 4.4em;
+    top: 1.2em;
+    left: 4.6em;
+  }
+
+  .tel {
+    top: 7em;
+    left: 5em;
+  }
+
+  .email {
+    left: 20em;
   }
 }
 
