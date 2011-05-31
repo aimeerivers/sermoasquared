@@ -205,6 +205,16 @@ body {
     clear: both;
   }
 
+  .half {
+    width: 50%;
+    float: left;
+
+    &.last {
+      margin-left: 50%;
+      float: none;
+    }
+  }
+
   header {
     height: 22em;
 
@@ -347,6 +357,22 @@ body {
     }
   }
 
+  .testimonials {
+    .testimonial {
+      margin-bottom: 2em;
+
+      blockquote {
+        font-size: 1.3em;
+        font-style: italic;
+        margin: auto 1.5em;
+      }
+
+      .attribution {
+        margin: 0.5em 0 0 4em;
+      }
+    }
+  }
+
   footer {
     margin: 3em auto;
     text-align: center;
@@ -455,6 +481,14 @@ body {
 
   body {
 
+    .half {
+      float: none;
+      width: auto;
+      &.last {
+        margin-left: auto;
+      }
+    }
+
     header, #main, footer {
       width: auto;
       margin: auto;
@@ -543,6 +577,19 @@ body {
 
         img {
           width: 95%;
+        }
+      }
+    }
+
+    .testimonials {
+      .testimonial {
+        blockquote {
+          font-size: 1.1em;
+          margin: auto;
+        }
+
+        .attribution {
+          margin-left: 1em;
         }
       }
     }
