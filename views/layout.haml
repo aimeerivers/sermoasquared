@@ -29,6 +29,13 @@
   -# Uncomment if you are specifically targeting less enabled mobile browsers
   -# <link rel="stylesheet" media="handheld" href="stylesheets/handheld.css?v=2">
 
+  -# Link to OpenID
+  %link(rel="openid.server" href="http://www.myopenid.com/server")
+  %link(rel="openid.delegate" href="http://sermoa.myopenid.com/")
+  %link(rel="openid2.local_id" href="http://sermoa.myopenid.com")
+  %link(rel="openid2.provider" href="http://www.myopenid.com/server")
+  %meta(http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=sermoa.myopenid.com")
+
   -# All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects
   %script(type="text/javascript" src="javascripts/libs/modernizr-1.7.min.js")
 
