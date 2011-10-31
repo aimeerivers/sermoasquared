@@ -40,7 +40,6 @@ LINKS = {
   flickr: 'http://flickr.com/photos/sermoa',
   github: 'http://github.com/sermoa',
   google: 'http://profiles.google.com/aimeedaniells',
-  gowalla: 'http://gowalla.com/sermoa',
   linkedin: 'http://linkedin.com/in/aimeedaniells',
   readernaut: 'http://readernaut.com/sermoa',
   skype: 'skype:sermoa?call',
