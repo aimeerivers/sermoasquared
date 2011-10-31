@@ -326,6 +326,12 @@ body {
       @extend .block-level;
     }
 
+    .cv {
+      float: right;
+      margin: 2em 1em 1em 1em;
+      text-align: center;
+    }
+
     .section {
       padding-top: 2em;
     }
